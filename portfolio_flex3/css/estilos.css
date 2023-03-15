@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Main Styling*/
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #3f4346;
+    color: #fff;
+    line-height: 1.5;
+}
+
+h1 {font-size: 42px;}
+h2 {font-size: 38px;}
+h4 {font-size: 25px;}
+
+
+h1,
+h2,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 2px solid #042158;
+}
+
+/*UTILITY CLASSES*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.large {
+    font-size: 18px;
+}
+
+.display-1 {
+    font-size: 80px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 13px;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #dd2c24;
+    border: 2px solid #fff;
+    scale: 1.1;
+}
+
+.btn-outline {
+    border: 2px solid #042158;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-link {
+    color: #042158;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #dd2c24;
+    
+}
+
+/*MAIN-HEADER*/
+#main-header {
+    background: url(/img/showcase.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*NAVBAR*/
+#nav-bar {
+    height: 120px;
+}
+
+#nav-bar .logo img {
+    height: 60px;
+}
+
+#nav-bar a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#nav-bar a:hover {
+    color: #dd2c24;
+    
+}
+
+#nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li {
+    margin-left: 40px;
+}
+
+/*Showcase*/
+#showcase {
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*WORK*/
+#work{ 
+    padding: 80px 0;
+}
+
+#work h2 {
+    text-align: center;
+}
+
+#work .work-row {
+    display: flex;
+}
+
+#work .work-row-box {
+    border: 2px solid #042158;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+}
+
+#work .work-row-box p {
+    padding-bottom: 17px;
+}
+
+/*ABOUT*/
+
+#about {
+    padding: 80px 0;
+    display: flex;
+}
+
+#about .about-text {
+    padding: 60px 50px;
+}
+
+#about .about-text p {
+    padding-bottom: 30px;
+}
+
+/*CONTACT*/
+#contact {
+    padding: 100px 0;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact-info,
+#contact .contact-logo,
+#contact .contact-social {
+    flex: 1;
+}
+
+#contact .contact-logo img {
+    height: 80px;
+}
+
+#contact .contact-logo {
+    text-align: center;
+}
+
+
+#contact .contact-social img {
+    filter: drop-shadow(5px 5px 15px #dd2c24);
+    height: 30px;
+    margin: 
+    5px;
+}
+
+#contact .contact-social {
+    text-align: right;
+}
+
+#contact .contact-info p { 
+    color: #dd2c24;
+}
+
+
+/*FOOTER*/
+#main-footer {
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .display-1 {
+        font-size: 50px;
+    }
+
+    #main-header {
+        height: 100%;
+    }
+
+    #nav-bar ul li {
+        margin-left: 20px;
+    }
+
+    #nav-bar ul li a{
+        font-size: 10px;
+    }
+
+    #showcase {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    #work .work-row {
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about .about-slim {
+        display: none;
+    }
+
+    #contact {
+        padding: 80px 0;
+    }
+    
+    #contact .contact-info p {
+        font-size: 14px;
+    }
+
+    #contact .contact-logo img {
+        height: 60px;
+    }
+    #contact .contact-social img {
+        height: 20px;
+        margin: 2px;
+    }
+}
+
